@@ -1,0 +1,114 @@
+body {
+  background-color: #0e1217;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+}
+
+.navbar-expand-lg {
+  background-color: #0e1217;
+}
+
+.header-button {
+  border-bottom: 1px solid rgba(168, 179, 207, 0.2);
+}
+
+.navbar-brand-logo {
+  color: #fff;
+  width: 2rem;
+}
+
+nav i {
+  color: white;
+  font-size: 3rem;
+}
+
+.button-access {
+  border-radius: 10px;
+  color: #0e1217;
+  font-weight: 700;
+  width: 180px;
+}
+
+.discover {
+  display: flex;
+  flex: nowrap;
+}
+
+aside div:first-child {
+  color: rgba(168, 179, 207, 0.64);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+aside svg {
+  width: 25px;
+}
+
+aside span {
+  color: #a8b3cf;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+aside section {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 210px;
+  height: 65px;
+  border-radius: 10px;
+  border: 1.5px solid #a8b3cf;
+  background-color: #1c1f26;
+}
+
+article {
+  margin-left: 17%;
+  border-left: 1px solid rgba(168, 179, 207, 0.2);
+}
+
+article .choose-tags {
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 3px 2px 1px #ce3df3;
+  border: 1.5px solid #ce3df3;
+}
+
+.best-discussions-add-shortcuts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 10px;
+  width: 300px;
+  border: 1px solid rgba(168, 179, 207, 0.2);
+  background-color: #1c1f26;
+}
+
+.card-heading {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.card-text {
+  color: rgba(168, 179, 207, 0.64);
+  font-size: 13px;
+}
+
+.card-logo i {
+  color: white;
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

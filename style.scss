@@ -1,0 +1,154 @@
+$white: #fff;
+$black: black;
+$purple: #ce3df3;
+$blur: rgba(168, 179, 207, 0.64);
+$light-blur: #a8b3cf;
+$border-color: rgba(168, 179, 207, 0.2);
+$background-color-primary: #0e1217;
+$background-color-secondary: #1c1f26;
+$font-primary: 15px;
+$font-secondary: 13px;
+
+$one-rem: 16px;
+$half-rem: 8px;
+
+@mixin border {
+    border-radius: 10px;
+}
+
+body {
+    background-color: $background-color-primary;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+}
+
+.navbar-expand-lg {
+    background-color: $background-color-primary;
+}
+
+.header-button {
+    border-bottom: 1px solid $border-color;
+}
+
+.navbar-brand-logo {
+    color: $white;
+    width: 2rem;
+}
+
+nav {
+    i {
+        color: white;
+        font-size: 3rem;
+    }
+}
+
+.button-access {
+    @include border;
+    color: $background-color-primary;
+    font-weight: 700;
+    width: 180px;
+}
+
+// explore-nav
+.discover {
+    display: flex;
+    flex: nowrap;
+}
+
+aside {
+    div:first-child {
+        color: $blur;
+        font-size: $font-secondary;
+        font-weight: 700;
+    }
+}
+
+aside {
+    svg {
+        width: 25px;
+
+    }
+}
+
+aside {
+    span {
+        color: $light-blur;
+        font-size: $font-primary;
+        font-weight: 400;
+
+    }
+}
+
+aside {
+    section {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 210px;
+        height: 65px;
+        border-radius: 10px;
+        border: 1.5px solid $light-blur;
+        background-color: $background-color-secondary;
+
+    }
+}
+
+// article portion
+
+article {
+    margin-left: 17%;
+    border-left: 1px solid $border-color;
+}
+
+article {
+    .choose-tags {
+        @include border;
+        width: 500px;
+        box-shadow: 3px 2px 1px $purple;
+        border: 1.5px solid $purple;
+
+
+    }
+}
+
+.best-discussions-add-shortcuts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    @include border;
+    width: 300px;
+    border: 1px solid $border-color;
+    background-color: $background-color-secondary;
+}
+
+.card-heading {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.card-text {
+    color: $blur;
+    font-size: 13px;
+}
+
+.card-logo {
+    i {
+        color: white;
+        font-size: 20px;
+    }
+}
