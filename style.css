@@ -6,12 +6,14 @@ a {
   text-decoration: none;
 }
 
-header {
-  position: fixed;
+main {
+  margin-top: 3.5rem;
 }
 
 .navbar-expand-lg {
   background-color: #0e1217;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .header-button {
@@ -23,9 +25,14 @@ header {
   width: 2rem;
 }
 
-nav i {
-  color: white;
-  font-size: 3rem;
+nav a:first-child i {
+  color: whitesmoke;
+  font-size: 2rem;
+}
+
+nav a:last-child i {
+  color: lightcyan;
+  font-size: 2.3rem;
 }
 
 .button-access {
@@ -35,9 +42,19 @@ nav i {
   width: 180px;
 }
 
+form {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+form:hover {
+  background-color: #a8b3cf;
+}
+
 .discover {
   display: flex;
   flex: nowrap;
+  padding: 0.25rem;
 }
 
 aside div:first-child {
@@ -47,7 +64,7 @@ aside div:first-child {
 }
 
 aside svg {
-  width: 25px;
+  width: 21px;
 }
 
 aside span {
@@ -61,9 +78,26 @@ aside section {
   flex-wrap: nowrap;
   width: 210px;
   height: 65px;
+  padding: auto;
+  align-items: center;
   border-radius: 10px;
-  border: 1.5px solid #a8b3cf;
+  border: 1px solid #a8b3cf;
   background-color: #1c1f26;
+}
+
+.explore-nav-footer-button div:last-child > div {
+  font-size: 1rem;
+}
+
+.explore-nav-footer-button i {
+  color: rgba(168, 179, 207, 0.64);
+  font-size: 2rem;
+}
+
+.explore-nav-footer-button div:last-child div:last-child {
+  font-size: 0.85rem;
+  font-weight: 100;
+  color: #a8b3cf;
 }
 
 article {
@@ -74,8 +108,12 @@ article {
 article .choose-tags {
   border-radius: 10px;
   width: 500px;
-  box-shadow: 3px 2px 1px #ce3df3;
+  box-shadow: 0 4px 8px 0 rgba(192, 41, 240, 0.2), 0 6px 20px 0 rgba(192, 41, 240, 0.19);
   border: 1.5px solid #ce3df3;
+}
+
+.discover:hover {
+  background-color: rgba(168, 179, 207, 0.2);
 }
 
 .best-discussions-add-shortcuts {

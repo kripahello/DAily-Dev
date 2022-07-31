@@ -24,12 +24,13 @@ a {
     text-decoration: none;
 }
 
-header {
-    position: fixed;
+main {
+    margin-top: 3.5rem;
 }
 
 .navbar-expand-lg {
     background-color: $background-color-primary;
+    position: sticky;
 }
 
 .header-button {
@@ -42,9 +43,20 @@ header {
 }
 
 nav {
-    i {
-        color: white;
-        font-size: 3rem;
+    a:first-child {
+        i {
+            color: whitesmoke;
+            font-size: 2rem;
+        }
+    }
+}
+
+nav {
+    a:last-child {
+        i {
+            color: lightcyan;
+            font-size: 2.3rem
+        }
     }
 }
 
@@ -55,10 +67,21 @@ nav {
     width: 180px;
 }
 
+form {
+    @include border;
+    background-color: $white;
+}
+
+form:hover {
+    background-color: $light-blur;
+}
+
 // explore-nav
+
 .discover {
     display: flex;
     flex: nowrap;
+    padding: .25rem;
 }
 
 aside {
@@ -71,7 +94,7 @@ aside {
 
 aside {
     svg {
-        width: 25px;
+        width: 21px;
 
     }
 }
@@ -91,12 +114,44 @@ aside {
         flex-wrap: nowrap;
         width: 210px;
         height: 65px;
+        padding: auto;
+        align-items: center;
+
         border-radius: 10px;
-        border: 1.5px solid $light-blur;
+        border: 1px solid $light-blur;
         background-color: $background-color-secondary;
 
     }
 }
+
+.explore-nav-footer-button {
+    div:last-child>div {
+        font-size: 1rem;
+    }
+
+
+}
+
+.explore-nav-footer-button {
+    i {
+        color: $blur;
+        font-size: 2rem;
+
+    }
+}
+
+.explore-nav-footer-button {
+    div:last-child {
+        div:last-child {
+            font-size: .85rem;
+            font-weight: 100;
+            color: $light-blur;
+        }
+    }
+}
+
+
+
 
 // article portion
 
@@ -109,11 +164,13 @@ article {
     .choose-tags {
         @include border;
         width: 500px;
-        box-shadow: 3px 2px 1px $purple;
+        box-shadow: 0 4px 8px 0 rgba(192, 41, 240, 0.2), 0 6px 20px 0 rgba(192, 41, 240, 0.19);
         border: 1.5px solid $purple;
-
-
     }
+}
+
+.discover:hover {
+    background-color: rgba(168, 179, 207, 0.2);
 }
 
 .best-discussions-add-shortcuts {
