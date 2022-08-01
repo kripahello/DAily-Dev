@@ -227,7 +227,7 @@ article .choose-tags {
      object-fit: cover;
 }
 
-.profile-img {
+.card .profile-img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -242,4 +242,22 @@ article .choose-tags {
 .card-body svg {
   width: 2rem;
   color: rgba(168, 179, 207, 0.64);
+}
+
+.profile-picture-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.profile-picture-row i {
+  color: rgba(168, 179, 207, 0.64);
+  font-size: 1.3rem;
+}
+
+.profile-picture-row img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

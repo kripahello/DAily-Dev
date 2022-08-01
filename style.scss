@@ -161,7 +161,7 @@ aside {
     }
 }
 
-.explore-footer-row{
+.explore-footer-row {
     width: 15.8%;
 }
 
@@ -218,7 +218,7 @@ article {
     }
 }
 
-.discover{
+.discover {
     width: 93%;
 }
 
@@ -297,23 +297,47 @@ article {
     }
 }
 
-.profile-img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+.card {
+    .profile-img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
 
+    }
 }
 
-.card-body{
+.card-body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.card-body{
-    svg{
+.card-body {
+    svg {
         width: 2rem;
         color: $blur;
 
+    }
+}
+
+.profile-picture-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.profile-picture-row {
+    i {
+        color: $blur;
+        font-size: 1.3rem;
+    }
+}
+
+.profile-picture-row {
+    img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
     }
 }
