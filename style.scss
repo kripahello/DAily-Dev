@@ -8,7 +8,6 @@ $background-color-primary: #0e1217;
 $background-color-secondary: #1c1f26;
 $font-primary: 15px;
 $font-secondary: 13px;
-
 $one-rem: 16px;
 $half-rem: 8px;
 
@@ -24,8 +23,22 @@ a {
     text-decoration: none;
 }
 
-main {
-    margin-top: 3.5rem;
+aside {
+    margin-top: 3rem;
+    width: 15%;
+}
+
+article {
+    margin: 3rem 14rem;
+    padding: 3rem 5.5rem;
+    width: 85%;
+    border-left: 1px solid $border-color;
+}
+
+
+form {
+    @include border;
+    background-color: $white;
 }
 
 .navbar-expand-lg {
@@ -65,11 +78,7 @@ nav {
     color: $background-color-primary;
     font-weight: 700;
     width: 180px;
-}
-
-form {
-    @include border;
-    background-color: $white;
+    padding: .5rem;
 }
 
 form:hover {
@@ -79,9 +88,12 @@ form:hover {
 // explore-nav
 
 .discover {
-    display: flex;
-    flex: nowrap;
-    padding: .25rem;
+    a {
+        display: flex;
+        flex: nowrap;
+        padding: .25rem;
+
+    }
 }
 
 aside {
@@ -116,7 +128,6 @@ aside {
         height: 65px;
         padding: auto;
         align-items: center;
-
         border-radius: 10px;
         border: 1px solid $light-blur;
         background-color: $background-color-secondary;
@@ -150,23 +161,65 @@ aside {
     }
 }
 
-
+.explore-footer-row{
+    width: 15.8%;
+}
 
 
 // article portion
 
-article {
-    margin-left: 17%;
-    border-left: 1px solid $border-color;
+.news-feed-nav {
+    margin: 4rem;
 }
 
 article {
     .choose-tags {
         @include border;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         width: 500px;
+        height: 48px;
+        padding: .8rem;
         box-shadow: 0 4px 8px 0 rgba(192, 41, 240, 0.2), 0 6px 20px 0 rgba(192, 41, 240, 0.19);
         border: 1.5px solid $purple;
     }
+}
+
+.feed-button-text {
+    color: $white;
+    font-size: .81rem;
+}
+
+.feed-button-button {
+    a {
+        @include border;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 135px;
+        height: 33px;
+        opacity: .9;
+        color: $black;
+        font-weight: 700;
+        background-color: $purple;
+    }
+}
+
+.feed-button-button:hover {
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(192, 41, 240, 0.2), 0 6px 20px 0 rgba(192, 41, 240, 0.19);
+}
+
+.feed-button-button {
+    i {
+        color: $background-color-secondary;
+    }
+}
+
+.discover{
+    width: 93%;
 }
 
 .discover:hover {
@@ -180,32 +233,87 @@ article {
     color: white;
 }
 
+.best-discussions-add-shortcuts {
+    div:first-child a {
+        color: whitesmoke;
+        font-size: 1.15rem;
+        font-weight: 750;
+    }
+}
+
+.best-discussions-add-shortcuts {
+    div:last-child a {
+        color: $light-blur;
+        font-size: 1rem;
+        font-weight: 750;
+    }
+}
+
+
 .cards {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
+
 }
 
 .card {
     @include border;
-    width: 300px;
+    width: 320px;
+    height: 360px;
     border: 1px solid $border-color;
     background-color: $background-color-secondary;
 }
 
+.card:hover {
+    border: 1px solid $blur;
+}
+
 .card-heading {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #ffffff;
     font-weight: 700;
 }
 
 .card-text {
     color: $blur;
-    font-size: 13px;
+    font-size: 0.81rem;
 }
 
 .card-logo {
     i {
         color: white;
-        font-size: 20px;
+        font-size: 1.25rem;
+    }
+}
+
+.card {
+    img {
+        @include border;
+        width: 96%;
+        height: 165px;
+        margin: auto;
+        object-fit: cover;
+    }
+}
+
+.profile-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.card-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-body{
+    svg{
+        width: 2rem;
+        color: $blur;
+
     }
 }

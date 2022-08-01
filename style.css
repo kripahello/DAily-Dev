@@ -6,8 +6,21 @@ a {
   text-decoration: none;
 }
 
-main {
-  margin-top: 3.5rem;
+aside {
+  margin-top: 3rem;
+  width: 15%;
+}
+
+article {
+  margin: 3rem 14rem;
+  padding: 3rem 5.5rem;
+  width: 85%;
+  border-left: 1px solid rgba(168, 179, 207, 0.2);
+}
+
+form {
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 .navbar-expand-lg {
@@ -40,18 +53,14 @@ nav a:last-child i {
   color: #0e1217;
   font-weight: 700;
   width: 180px;
-}
-
-form {
-  border-radius: 10px;
-  background-color: #fff;
+  padding: 0.5rem;
 }
 
 form:hover {
   background-color: #a8b3cf;
 }
 
-.discover {
+.discover a {
   display: flex;
   flex: nowrap;
   padding: 0.25rem;
@@ -100,16 +109,56 @@ aside section {
   color: #a8b3cf;
 }
 
-article {
-  margin-left: 17%;
-  border-left: 1px solid rgba(168, 179, 207, 0.2);
+.explore-footer-row {
+  width: 15.8%;
+}
+
+.news-feed-nav {
+  margin: 4rem;
 }
 
 article .choose-tags {
   border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   width: 500px;
+  height: 48px;
+  padding: 0.8rem;
   box-shadow: 0 4px 8px 0 rgba(192, 41, 240, 0.2), 0 6px 20px 0 rgba(192, 41, 240, 0.19);
   border: 1.5px solid #ce3df3;
+}
+
+.feed-button-text {
+  color: #fff;
+  font-size: 0.81rem;
+}
+
+.feed-button-button a {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 135px;
+  height: 33px;
+  opacity: 0.9;
+  color: black;
+  font-weight: 700;
+  background-color: #ce3df3;
+}
+
+.feed-button-button:hover {
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(192, 41, 240, 0.2), 0 6px 20px 0 rgba(192, 41, 240, 0.19);
+}
+
+.feed-button-button i {
+  color: #1c1f26;
+}
+
+.discover {
+  width: 93%;
 }
 
 .discover:hover {
@@ -123,30 +172,74 @@ article .choose-tags {
   color: white;
 }
 
+.best-discussions-add-shortcuts div:first-child a {
+  color: whitesmoke;
+  font-size: 1.15rem;
+  font-weight: 750;
+}
+
+.best-discussions-add-shortcuts div:last-child a {
+  color: #a8b3cf;
+  font-size: 1rem;
+  font-weight: 750;
+}
+
 .cards {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
 }
 
 .card {
   border-radius: 10px;
-  width: 300px;
+  width: 320px;
+  height: 360px;
   border: 1px solid rgba(168, 179, 207, 0.2);
   background-color: #1c1f26;
 }
 
+.card:hover {
+  border: 1px solid rgba(168, 179, 207, 0.64);
+}
+
 .card-heading {
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #ffffff;
   font-weight: 700;
 }
 
 .card-text {
   color: rgba(168, 179, 207, 0.64);
-  font-size: 13px;
+  font-size: 0.81rem;
 }
 
 .card-logo i {
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+.card img {
+  border-radius: 10px;
+  width: 96%;
+  height: 165px;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-body svg {
+  width: 2rem;
+  color: rgba(168, 179, 207, 0.64);
 }/*# sourceMappingURL=style.css.map */
