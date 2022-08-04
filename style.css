@@ -206,6 +206,7 @@ article .choose-tags {
 .main-profile-body {
   position: absolute;
   height: 40%;
+  width: 100%;
   padding: 1.3rem;
 }
 
@@ -240,9 +241,10 @@ article .choose-tags {
 }
 
 .card-heading-light {
+  position: absolute;
   color: #a8b3cf;
   font-size: 0.8rem;
-  margin-bottom: -6rem;
+  bottom: 0;
 }
 
 .card-img {

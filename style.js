@@ -5,6 +5,11 @@ function myFunction()
     document.getElementById("spaceBar").style.display="block";  
 }
 
+function yourFunction()
+{
+    document.getElementById("spaceBar").style.display="none";  
+}
+
 //document.getElementById("profile").src = "camera.jpg";
 
 

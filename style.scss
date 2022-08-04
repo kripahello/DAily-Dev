@@ -274,6 +274,7 @@ article {
 .main-profile-body {
     position: absolute;
     height: 40%;
+    width: 100%;
     padding: 1.3rem;
 }
 
@@ -313,9 +314,10 @@ article {
 }
 
 .card-heading-light {
+    position: absolute;
     color: $light-blur;
     font-size: .8rem;
-    margin-bottom: -6rem;
+    bottom: 0;
 }
 
 .card-img {
