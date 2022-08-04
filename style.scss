@@ -10,6 +10,7 @@ $font-primary: 15px;
 $font-secondary: 13px;
 $one-rem: 16px;
 $half-rem: 8px;
+$button-hover-color: #39e58c;
 
 @mixin border {
     border-radius: 10px;
@@ -259,6 +260,7 @@ article {
 
 .card {
     @include border;
+    position: relative;
     width: 320px;
     height: 360px;
     border: 1px solid $border-color;
@@ -269,10 +271,72 @@ article {
     border: 1px solid $blur;
 }
 
+.main-profile-body {
+    position: absolute;
+    height: 40%;
+    padding: 1.3rem;
+}
+
+.profile-picture-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.profile-picture-row {
+    .profile-img {
+        width: 37px;
+        height: 37px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+.profile-picture-row {
+    i {
+        color: $blur;
+        font-size: 1.2rem;
+    }
+}
+
+.profile-picture-row {
+    i :hover{
+        background-color: $blur;
+        padding: 2rem;
+    }
+}
+
 .card-heading {
     font-size: 1.25rem;
     color: #ffffff;
     font-weight: 700;
+}
+
+.card-heading-light {
+    color: $light-blur;
+    font-size: .8rem;
+    margin-bottom: -6rem;
+}
+
+.card-img {
+    @include border;
+    width: 96%;
+    height: 165px;
+    bottom: 2.5rem;
+    left: .4rem;
+    position: absolute;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
 }
 
 .card-text {
@@ -280,64 +344,101 @@ article {
     font-size: 0.81rem;
 }
 
-.card-logo {
-    i {
-        color: white;
-        font-size: 1.25rem;
-    }
-}
-
-.card {
-    img {
-        @include border;
-        width: 96%;
-        height: 165px;
-        margin: auto;
-        object-fit: cover;
-    }
-}
-
-.card {
-    .profile-img {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-
-    }
-}
-
-.card-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .card-body {
     svg {
-        width: 2rem;
-        color: $blur;
-
+        width: 1.5rem;
+        color: $light-blur;
+        border-radius: 5px;
+        // margin: 0 2rem -1rem 2rem;
     }
 }
 
-.profile-picture-row {
-    display: flex;
-    flex-direction: row;
+.card-body {
+    svg:hover {
+        background-color:rgba(106, 255, 106,0.5);
+        opacity: .7;
+        color: #39e58c;
+    }
+}
+
+#spaceBar{
+    @include border;
+    display: none;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 35%;
+    height: 50%;
+    z-index: 1;
+
+    background-color: $background-color-secondary
+}
+
+#spaceBar{
+    i{
+        color:$blur;
+        font-size: 2rem;
+        display: float;
+            }
+}
+
+.daily-toggle-heading{
     width: 100%;
-    justify-content: space-between;
+    text-align:  center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
 }
 
-.profile-picture-row {
-    i {
-        color: $blur;
-        font-size: 1.3rem;
+.daily-toggle-heading{
+    i:last-child{
+        @include border;
+        float: right;
+        padding: .3rem;
     }
 }
 
-.profile-picture-row {
-    img {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
+.daily-toggle-heading{
+    i:last-child:hover{
+        background-color: rgba(168, 179, 207, 0.3);
     }
 }
+
+.unlock{
+    width: 90%;
+    margin: auto;
+    text-align-last: center;
+    color: whitesmoke;
+}
+
+
+
+
+
+.btn-drop{
+    @include border;
+    width: 40%;
+    align-items: center;
+    padding: .5rem;
+    margin:1.5rem 29% 2rem 29%;
+    background-color: $white;
+}
+
+.btn-drop{
+    a{
+        align-items: center;
+        padding: .5rem;
+        color: #0e1217;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+.toggle-footer{
+width: 60%;
+color: $blur;
+margin: auto;
+text-align-last: center;
+font-size: .8rem;
+}
+

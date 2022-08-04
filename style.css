@@ -192,6 +192,7 @@ article .choose-tags {
 
 .card {
   border-radius: 10px;
+  position: relative;
   width: 320px;
   height: 360px;
   border: 1px solid rgba(168, 179, 207, 0.2);
@@ -202,10 +203,68 @@ article .choose-tags {
   border: 1px solid rgba(168, 179, 207, 0.64);
 }
 
+.main-profile-body {
+  position: absolute;
+  height: 40%;
+  padding: 1.3rem;
+}
+
+.profile-picture-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.profile-picture-row .profile-img {
+  width: 37px;
+  height: 37px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-picture-row i {
+  color: rgba(168, 179, 207, 0.64);
+  font-size: 1.2rem;
+}
+
+.profile-picture-row i :hover {
+  background-color: rgba(168, 179, 207, 0.64);
+  padding: 2rem;
+}
+
 .card-heading {
   font-size: 1.25rem;
   color: #ffffff;
   font-weight: 700;
+}
+
+.card-heading-light {
+  color: #a8b3cf;
+  font-size: 0.8rem;
+  margin-bottom: -6rem;
+}
+
+.card-img {
+  border-radius: 10px;
+  width: 96%;
+  height: 165px;
+  bottom: 2.5rem;
+  left: 0.4rem;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
 }
 
 .card-text {
@@ -213,51 +272,83 @@ article .choose-tags {
   font-size: 0.81rem;
 }
 
-.card-logo i {
-  color: white;
-  font-size: 1.25rem;
-}
-
-.card img {
-  border-radius: 10px;
-  width: 96%;
-  height: 165px;
-  margin: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.card .profile-img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-
-.card-body {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .card-body svg {
-  width: 2rem;
-  color: rgba(168, 179, 207, 0.64);
+  width: 1.5rem;
+  color: #a8b3cf;
+  border-radius: 5px;
 }
 
-.profile-picture-row {
-  display: flex;
-  flex-direction: row;
+.card-body svg:hover {
+  background-color: rgba(106, 255, 106, 0.5);
+  opacity: 0.7;
+  color: #39e58c;
+}
+
+#spaceBar {
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 35%;
+  height: 50%;
+  z-index: 1;
+  background-color: #1c1f26;
+}
+
+#spaceBar i {
+  color: rgba(168, 179, 207, 0.64);
+  font-size: 2rem;
+  display: float;
+}
+
+.daily-toggle-heading {
   width: 100%;
-  justify-content: space-between;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
-.profile-picture-row i {
+.daily-toggle-heading i:last-child {
+  border-radius: 10px;
+  float: right;
+  padding: 0.3rem;
+}
+
+.daily-toggle-heading i:last-child:hover {
+  background-color: rgba(168, 179, 207, 0.3);
+}
+
+.unlock {
+  width: 90%;
+  margin: auto;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  color: whitesmoke;
+}
+
+.btn-drop {
+  border-radius: 10px;
+  width: 40%;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 1.5rem 29% 2rem 29%;
+  background-color: #fff;
+}
+
+.btn-drop a {
+  align-items: center;
+  padding: 0.5rem;
+  color: #0e1217;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.toggle-footer {
+  width: 60%;
   color: rgba(168, 179, 207, 0.64);
-  font-size: 1.3rem;
-}
-
-.profile-picture-row img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
+  margin: auto;
+  -moz-text-align-last: center;
+       text-align-last: center;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=style.css.map */

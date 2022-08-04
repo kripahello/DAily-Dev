@@ -1,3 +1,13 @@
+
+
+function myFunction()
+{
+    document.getElementById("spaceBar").style.display="block";  
+}
+
+//document.getElementById("profile").src = "camera.jpg";
+
+
 // function mOver(obj) {
 //   obj.style.color ="red";
 // }
